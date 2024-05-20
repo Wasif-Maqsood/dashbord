@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.globalFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5.438rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 5.313rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 4.438rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.bodypositoning {
+  position: relative;
+  top: 10rem;
+}
+
+h1.mainHeading {
+  padding: 0rem 0rem 4rem 0rem;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  line-height: 87px;
+}
+
+h1.mainHeading>span {
+  color: #7950F2;
+}
+
+/* FOR THEME CHANGING FUNCTIONALITY */
+
+.darkModeText {
+  color: black;
+}
+
+/* NAVBAR SECTION  */
+nav {
+  padding-top: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.globalFlex.navBar {
+  justify-content: space-between;
+  background-color: #7950F2;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+}
+
+.navBarMenus.globalFlex {
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.navBarMenus.globalFlex>a {
+  font-size: 1.563rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.navBarMenus.globalFlex>a:hover {
+  /* font-size: 2rem; */
+  transform: scale(1.2);
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+.navBtn {
+  padding: 0.8rem;
+  background: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.563rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navBtn>a {
+  text-decoration: none;
+  color: #7950F2;
+}
+
+.navBtn:hover {
+  background-color: #7950F2;
+  border: 2px solid #ffffff;
+  transition: 0.3s;
+}
+
+.navBtn:hover.navBtn>a {
+  color: #ffffff;
+}
+
+/* BANNER SECTION  */
+.bannerSection {
+  padding-bottom: 5rem;
+  height: 100vh;
+}
+
+.bannerContent.globalFlex {
+  padding: 1rem 0rem;
+  /* align-items: unset; */
+}
+
+.bannerLeft,
+.bannerRight {
+  width: 50%;
+}
+
+/* .bannerRight {
+  width: 40%;
+} */
+
+.bannerLeftContent,
+.bannerRightContent {
+  width: 100%;
+}
+
+.bannerRightContent>img {
+  width: 100%;
+}
+
+.bannerLeftContent>h1 {
+  width: 70%;
+  line-height: 90px;
+  letter-spacing: 1.8%;
+}
+
+.bannerLeftContent>h1>span {
+  color: #7950F2;
+}
+
+
+/* BANNER BUTTONS */
+.bannerBtn.globalFlex {
+  justify-content: flex-start;
+  gap: 2rem;
+  padding-top: 3rem;
+}
+
+.navBtn.bannerStartForFreeBtn {
+  background-color: #7950F2;
+  width: 20%;
+}
+
+.navBtn.bannerStartForFreeBtn>a {
+  color: #ffffff;
+}
+
+.navBtn.bannerStartForFreeBtn:hover {
+  background-color: #ffffff;
+  border: 2px solid #7950F2;
+}
+
+.navBtn.bannerStartForFreeBtn:hover.navBtn.bannerStartForFreeBtn>a {
+  color: #7950F2;
+}
+
+.navBtn.bookAdemoBtn {
+  border: 2px solid #7950F2;
+  width: 20%;
+}
+
+
+/* CREATIVE PERFORMANCES SECTION  */
+
+.creativePerformanceSection.globalFlex {
+  gap: 3rem;
+  margin-top: 5rem;
+  align-items: unset;
+}
+
+
+.creativePerformanceLeft.globalFlex {
+  justify-content: flex-start;
+  width: 7%;
+  background-color: #7950F2;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #ffffff;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.creativePerformanceLeft>div>svg {
+  margin-bottom: 1rem;
+}
+
+.creativePerformanceRight {
+  width: 93%;
+}
+
+h1.mainHeading.creativePerformanceHd {
+  background-color: #7950F2;
+  width: 100%;
+  padding: 0;
+  padding: 2rem;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.creativePerfomanceImage {
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.creativePerfomanceImage>img {
+  width: 100%;
+}
+
+/* CONNECTOR SECTION  */
+
+.connectorFlex.globalFlex {
+  justify-content: space-between;
+  align-items: unset;
+}
+
+.connectorLeft {
+  width: 50%;
+}
+
+.connectorRight {
+  width: 50%;
+}
+
+.connectorRightContent,
+.connectorLeftContent {
+  width: 100%;
+}
+
+.connectorLeftContent>h3 {
+  line-height: 71px;
+  width: 80%;
+}
+
+.connectorLeftContent>p {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 49px;
+  padding: 2rem 0;
+  width: 85%;
+}
+
+.connectorRight {
+  background-color: #ffffff;
+  padding: 3rem 0rem;
+  border-radius: 37px 0px 0px 37px;
+}
+
+.connectorRightContent {
+  position: relative;
+}
+
+.connectorRightContent>div>h4 {
+  font-size: 1.78rem;
+  font-weight: 600;
+  line-height: 88px;
+  padding-bottom: 2rem;
+}
+
+.polygonLine {
+  position: absolute;
+  right: 0;
+  top: 118px;
+  width: 229px;
+}
+
+.connectorBrands.globalFlex {
+  justify-content: flex-start;
+  gap: 4rem;
+}
+
+.connectorBrands.globalFlex>p {
+  font-size: 1.1rem;
+  color: #0000006c;
+}
+
+.connectorIcons.globalFlex {
+  margin-top: 3rem;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  padding: 1rem;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.connectorCardsFlex.globalFlex {
+  justify-content: flex-start;
+  gap: 2rem;
+  text-align: center;
+}
+
+
+.connectorIconsContent {
+  width: 50%;
+}
+
+.connectorIconsContent>img {
+  width: 100%;
+}
+
+
+.themeChanger.navBtn {
+  width: 70px;
+  color: #7950F2;
+  transition: 0.2s;
+}
+
+.themeChanger.navBtn:hover {
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+
+
+/* USER REVIEWS SECTION  */
+
+.userReviewsBg {
+  background-color: #000000;
+  margin-top: 7rem;
+  padding: 4rem;
+}
+
+h1.mainHeading.userReviewHd {
+  font-size: 5.625rem;
+  line-height: 107px;
+  color: #ffffff;
+  width: 80%;
+  padding: 2rem 0;
+}
+
+.userReviewsCardSectionContent.globalFlex {
+  padding-top: 4rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.userReviewsCard {
+  width: 23%;
+  border-radius: 21px;
+  background-color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+.userReviewsCardContent {
+  border-bottom: 2px solid transparent;
+  padding: 1rem 2rem;
+}
+
+.userRatings.globalFlex {
+  gap: 0.5rem;
+  justify-content: flex-start;
+  padding-bottom: 1rem;
+}
+
+.userRatings.globalFlex>i {
+  font-size: 1.3rem;
+  color: goldenrod;
+}
+
+.userRatingsContent>p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.userReviewCardBorder {
+  border-top: 1px solid #707070;
+  /* padding: 1rem 2rem; */
+}
+
+.userReviewCardInfo.globalFlex {
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+.userReviewCardInfo.globalFlex>div>img {
+  width: 100%;
+}
+
+.userReviewCardInfoContent>h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.userReviewCardInfoContent>p {
+  font-size: 0.813rem;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* KEEP UP WITH THEM BUTTON  */
+
+.navBtn.bannerStartForFreeBtn.keepUpWithThem {
+  width: 19%;
+  padding: 1.5rem;
+  margin: auto;
+}
+
+.navBtn.bannerStartForFreeBtn.keepUpWithThem:hover {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+}
+
+
+.navBtn.bannerStartForFreeBtn.keepUpWithThem:hover.navBtn.bannerStartForFreeBtn.keepUpWithThem>a {
+  color: #ffffff;
+}
